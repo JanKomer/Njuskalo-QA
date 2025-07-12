@@ -42,7 +42,7 @@ public class BolhaHomePage {
             page.getByRole(AriaRole.COMBOBOX, new Page.GetByRoleOptions().setName("Kaj iščete danes?")).click();
             page.getByRole(AriaRole.COMBOBOX, new Page.GetByRoleOptions().setName("Kaj iščete danes?")).fill(carBrandName);
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Kategorije")).click();
-            page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("BMW").setExact(true)).locator("span").click();
+            page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(carBrandName).setExact(true)).locator("span").click();
         } catch (TimeoutError error){
             logger.error("Bolha", error);
             throw new TestException("Search timed out, please check if car brand is correct.");
