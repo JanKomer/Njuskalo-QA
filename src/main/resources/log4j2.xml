@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="fout" fileName="logs/error.log" append="true">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <AsyncRoot level="ERROR">
+            <AppenderRef ref="fout"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>

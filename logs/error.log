@@ -1,0 +1,41 @@
+2025-07-12 23:13:47 ERROR Bolha
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("BMW").setExact(true)).locator("span")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.Locator.click(Locator.java:2500) ~[playwright-1.53.0.jar:1.53.0]
+	at src.pages.BolhaHomePage.searchCar(BolhaHomePage.java:45) [classes/:?]
+	at src.testcases.TestCase1.main(TestCase1.java:34) [classes/:?]
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\veljk\AppData\Local\Temp\playwright-java-18250397586640604522\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("BMW").setExact(true)).locator("span")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214) ~[playwright-1.53.0.jar:1.53.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136) ~[playwright-1.53.0.jar:1.53.0]
+	... 8 more
