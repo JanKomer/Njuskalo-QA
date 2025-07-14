@@ -14,7 +14,7 @@ import java.util.*;
 public class TestCase1 {
     public static void main(String[] args) {
         if (args.length != 4) {
-            System.out.println("Usage: java -jar testcase.jar <carBrandNjuskalo> <parametersNjuskalo> <carBrandBolha> <parametersBolha>");
+            System.out.println("Arguments: <carBrandNjuskalo> <parametersNjuskalo> <carBrandBolha> <parametersBolha>");
             System.out.println("Paramaters of format: <starting_year>-<ending_year>,<max_kilometers>");
             System.exit(1);
         }
